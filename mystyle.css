@@ -1,0 +1,132 @@
+  .checkeable input {
+  display: none;
+}
+.checkeable img {
+  width: 300px;
+  border: 5px solid transparent;
+}
+.checkeable input {
+  display: none;
+}
+.checkeable input:checked  + img {
+  border-color: green;
+}
+.left{
+    float: left;
+    display:inline-block
+}
+#tor{
+  width: 20px;
+}
+#div{
+  background-color: white;
+  display: inline-block;
+  width: 60%;
+  border-top: red 25px double;
+  border-right: green 25px double;
+  border-bottom: yellow 25px double;
+  border-left: blue 25px double;
+  text-align: center;
+}
+#titulo{
+  font-family: "Cherry Swash";
+  font-size: 25px;
+  color: white;
+  float: left;
+  padding-left: 100px;
+  letter-spacing: 5px;
+}
+#clientes{
+  font-family: "Cherry Swash";
+  font-size: 20px;
+  float: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  letter-spacing: 2px;
+ }
+  
+h1 { 
+  color: black;
+   font-family: "Sarabun";
+   }
+   h2 { 
+  color: black;
+   font-family: "Sarabun";
+   }
+    
+   #formT{
+    font-size: 20px;
+   font-family: "Sarabun";
+   }
+body {background-image: url("Imagenes/fondo.jpg"); background-size: contain; }
+header{    
+  	position: absolute;
+  	background-color:#4335F0;
+  	left: 0;
+    top: 0px;
+    width: 100%;
+    color: white;
+    padding: 10px;
+}
+
+
+
+#centrar{
+  text-align: center;
+}
+footer{
+  
+  line-height: 4;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+.centrar
+  {
+    position: absolute;
+    /*nos posicionamos en el centro del navegador*/
+    top:50%;
+    left:50%;
+    /*determinamos una anchura*/
+    width:400px;
+   
+    /*indicamos que el margen izquierdo, es la mitad de la anchura*/
+    margin-left:-200px;
+    /*determinamos una altura*/
+    height:300px;
+    /*indicamos que el margen superior, es la mitad de la altura*/
+    margin-top:-150px;
+    border:1px solid #808080;
+    padding:5px;
+  }
+  a:hover {
+   color:black;
+          }
+
+  a{
+  font-family: "Sarabun";
+  letter-spacing: 1px;
+  font-size: 25px;
+  color: white;
+   }
+
+/* para 700px o menos */
+	@media screen and (max-width:700px) {
+		div,header{
+			float:none;
+			width:85%;
+            font-size:0.8em;
+		}
+        audio{
+            float:none;
+			width:40%;
+        }
+        #clientes {
+			display:none;
+		}
+		
+
+}
+
+

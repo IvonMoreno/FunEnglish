@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="claveSeguridad.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Cherry+Swash|Sarabun" rel="stylesheet">
+	<link rel="stylesheet" href="estilosUsuario.css">
+	<title>Registro</title>
+</head>
+
+<body style="background: #FFFFFF">	
+	<header>
+            <div id="titulo">
+            	FunEnglish Kids  
+            </div>
+
+            <div id="clientes">
+          		PUBLICIDAD: FunEnglish@gmail.com
+        	</div>
+        </header>	
+
+
+	<form id='myform' action="insertarDatos.php" method="post">
+		<div id="Contenedor">
+			<div class="Icon">
+	        		<img src="Imagenes/lobito bandera.png" width="150">
+	        	</div>
+	        	<label id="form-title">REGISTRO DE USUARIO</label> <br>
+	        	<center>
+					<input class="input-form" name="nombre" type="text" id="nombre"
+					placeholder="Nombre de Usuario"
+					required />
+                	<br><br>	
+					<input class="input-form" type="email" name="mail" id="mail"
+					placeholder="e-mail"
+					required />
+					<br><br>	
+					<select class="select-ff" name="genero" id="genero">
+						<option value="Género">Género</option>
+						<option value="Hombre">Hombre</option>
+						<option value="Mujer">Mujer</option>
+					</select>
+					<br><br>
+				<span>La contraseña debe contener numeros,letras mayusculas y minusculas</span> 
+            	<input class="input-form" name="passw" type="password" id="passw"
+					placeholder="Contraseña"
+
+					required onkeyup="muestra_seguridad_clave(this.value, this.form)"/>
+					<p>
+					<i>seguridad:</i> <input id="segur" name="seguridad" type="text" onfocus="blur()">
+					</p>
+                 
+                 <p>
+					
+					<input class="input-form" name="edad" type="number" id="edad"
+					placeholder="Edad"
+					autocomplete="on"
+					required />
+                </p>
+                 <p>
+                Si desea regresar a la pagina principal <a href="login.html">haga clic
+                aquí</a>.
+                </p>
+
+</center>
+          
+		 </form>
+	<center>
+        	<span>
+        		<button class="boton" onclick="validar(this.form)">Registrar</button>
+        	</span>
+             		 
+          
+        </center> 		       		
+</div> 
+				
+</body>
+
+ 
+               <footer id="fu" style="background-color:#4335F0; width: 100% ">
+        &copy; 2019 Derechos reservados | FunEnglish Kids Corporation
+      </footer> 
+
+</html>

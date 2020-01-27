@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  <title>QUIZ</title>
+ 
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+  <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cherry+Swash|Sarabun" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Cherry+Swash|Sarabun" rel="stylesheet">
+  <style type="text/css">
+    body{
+      font: -family: 'Tangerine', serif;
+      font-size: 35px;
+    }
+  </style>
+</head>
+<body>
+  <marquee direction="right"> 
+  <center>
+   <font color="red" face="Acme">
+  <h1> QUIZ</h1><br/>
+  </font>
+  </center>
+  </marquee>
+
+    </header>
+<body>
+  <script type="text/javascript">
+  function capturar()
+    {
+      cont=0;
+        // obtenemos el valor por el numero de elemento
+       
+        var cars = ["Buenas tardes", "Adios", "sorry","please","Welcome","Good night","Good Morning","Hello"];   
+for (var i = 0; i < 8; i++) {
+ if(document.forms["frmSO"].elements[i].value==cars[i]){
+cont=cont+1;
+alert(cont);
+ }else
+ {
+alert("Incorrecto, fallaste en el " +i+ "Intenta nuevamente");
+cont=0;
+break;
+ }
+if(cont==8){
+  alert(cont);
+  window.location.href="Dtos.php?variable2=2";
+}
+}
+
+
+        // Obtenemos el valor por el id
+     //  var porId=document.getElementById("seleccion").value;
+        // Obtenemos el valor por el Nombre
+      //  var porNombre=document.getElementsByName("seleccion")[0].value;
+        // Obtenemos el valor por el tipo de tag
+      //  var porTagName=document.getElementsByTagName("select")[0].value;
+        // Obtenemos el valor por el nombre de la clase
+      //  var porClassName=document.getElementsByClassName("formulario_select")[0].value;
+ 
+        //document.getElementById("resultado").innerHTML=" \
+       //     Por elementos: "+porElementos+" \
+       //     <br>Por ID: "+porId+" \
+       //     <br>Por Nombre: "+porNombre+" \
+        //    <br>Por TagName: "+porTagName+" \
+        //    <br>Por ClassName: "+porClassName;
+    }
+    </script>
+
+<form name="frmSO">
+<font color="Olive" face="sarabun">
+ <H2>1.- Selecciona la opción correcta: </H2><br/><br/>
+</font>
+
+<table border="5" style="margin: 0 auto;">
+
+  <tr>
+    <th scope="row">0<IMG SRC="tarde.jpg" WIDTH=200 HEIGHT=200> <select name="saludos">  <option>Bienvenido </option> <option>Adios</option> <option>Buenas tardes</option></select></th> </font>
+
+    <th>1<IMG SRC="bye.png" WIDTH=200 HEIGHT=200> <select name="saludos1"> <option>Buenos dias</option> <option>Adios</option> <option>Hola</option></select></th>
+
+    <th>2<IMG SRC="disculpa.jpg" WIDTH=200 HEIGHT=200 > <select name="saludos2"> <option>Hello</option> <option>Excuse me</option> <option>sorry</option></select></th>
+
+    <th>3<IMG SRC="porfavor.jpg" WIDTH=200 HEIGHT=200 > <select name="saludos3"> <option>please</option> <option>Good Bye</option> <option>Hello<</option></select></th>
+   
+  </tr>
+
+  <tr>
+    <th>4<IMG SRC="bien.gif" WIDTH=200 HEIGHT=200> <select name="saludos"> <option>Welcome</option> <option>Good Bye</option> <option>Hello</option></select></th>
+
+    <td>5<IMG SRC="noche.jpg" WIDTH=200 HEIGHT=200> <select name="saludos"> <option>Sorry</option> <option>Good Bye</option> <option>Good night</option></select></td>
+
+    <td>6<IMG SRC="dia.jpg" WIDTH=200 HEIGHT=200> <select name="saludos"> <option>Good Bye</option> <option>Good Morning</option> <option>Hello</option></select></td>
+
+    <td>7<IMG SRC="hola.jpg" WIDTH=200 HEIGHT=200> <select name="saludos"> <option>Excuse Me</option> <option>Good Bye</option> <option>Hello</option></select></td>
+  </tr>
+</table>
+<input type="submit" name="enviar" value="Aceptar" class="boton"
+ onclick="capturar()">
+</form>
+</body>
+</html>

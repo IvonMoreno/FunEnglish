@@ -1,0 +1,139 @@
+header{    
+  	position: absolute;
+  	background-color:#4335F0;
+  	left: 0;
+    top: 0px;
+    width: 100%;
+    color: white;
+    padding: 20px;
+}
+
+
+#titulo{
+font-family: "Cherry Swash";
+  color: white;
+  float: left;
+  font-size: 25px;
+  padding-left: 100px;
+  letter-spacing: 5px;
+  padding-top: 15px;
+}
+
+#clientes{
+ font-family: "Cherry Swash";
+  float: right;
+ font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  letter-spacing: 2px;
+ }
+
+
+#Contenedor{
+	width: 500px;
+	margin: 100px auto;
+	background-color: #f1f1f1;
+    border: 1px solid #ECE8E8;	
+	border-radius:8px;
+	padding: 0px 20px 20px 20px;
+}
+
+.Icon{
+     margin-top: 20px;
+     margin-bottom:10px;
+     text-align: center;
+}
+
+#form-title {
+  font-family: Copperplate Gothic Light;
+  font-size: 24px;
+  color: #333333;
+  line-height: 1;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding-bottom: 15px;
+}
+
+
+
+
+#par {
+  font-size: 15px;
+  font-family: Copperplate Gothic Light;
+}
+
+
+
+
+
+
+img.imgCentro{
+  padding: 0px 12px 0px 12px;
+  vertical-align: middle;
+}
+
+.input-form {
+  	font-family: Century Gothic;
+	font-size: 16px;
+	line-height: 1;
+	color: black;
+	width: 80%;
+	height: 30px;
+	padding-left: 15px;
+	}
+
+.input-form:hover { 
+    border-color: #8DC16A;
+}
+
+.boton {
+  font-family: Copperplate Gothic Light;
+  letter-spacing: 4px;
+  font-size: 20px;
+  background: #4335F0;
+  line-height: .5;
+  color: white;
+  width: 60%;
+  height: 50px;
+}
+
+.boton:hover {
+  background: #A9F5A9;
+}
+
+
+a:hover {
+font-size:20px;
+color:#100;
+}
+
+a:link {
+	font-family: "Times New Roman";
+	letter-spacing: 1px;
+	color: black;
+}
+
+footer{
+  margin-bottom: 0px;
+  text-align: center;
+  background-color: #8DC16A;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 20px;
+}
+
+.select-ff{
+  font-family: Century Gothic;
+  font-size: 16px;
+  color: #7F7F7F;
+  width: 84%;
+  height: 30px;
+  background: white url("http://i62.tinypic.com/15xvbd5.png") no-repeat 97% center;
+  -webkit-appearance: button;
+  padding-left: 15px;
+}
+
+

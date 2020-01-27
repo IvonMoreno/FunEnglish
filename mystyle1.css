@@ -1,0 +1,157 @@
+  .checkeable input {
+  display: none;
+}
+.checkeable img {
+  width: 300px;
+  border: 5px solid transparent;
+}
+.checkeable input {
+  display: none;
+}
+.checkeable input:checked  + img {
+  border-color: green;
+}
+.left{
+    float: left;
+    display:inline-block
+}
+body {
+  font-size: 300%;
+}
+
+.opcion {
+  font-family: "Sarabun";
+  letter-spacing: 3px;
+  font-size: 20px;
+  background: #4682B4;
+  line-height: .4;
+  color: white;
+  width: 20%;
+  height: 50px;
+}
+
+.boton {
+  font-family: "Sarabun";
+  letter-spacing: 3px;
+  font-size: 20px;
+  background: #4335F0;
+  line-height: .4;
+  color: white;
+  width: 30%;
+  height: 50px;
+}
+#div{
+  background-color: white;
+  display: inline-block;
+  width: 90%;
+  border-top: red 25px double;
+  border-right: green 25px double;
+  border-bottom: yellow 25px double;
+  border-left: blue 25px double;
+  text-align: center;
+}
+#div2{
+  background-color: white;
+  display: inline-block;
+  width: 65%;
+  border-top: red 25px double;
+  border-right: green 25px double;
+  border-bottom: yellow 25px double;
+  border-left: blue 25px double;
+  text-align: center;
+}
+
+h1 { 
+font-family: "Cherry Swash"; 
+font-size: 30px;
+color: black;
+
+}
+h2{
+  font-size: 20px;
+
+}
+body {background-image: url("Imagenes/fondo.jpg"); 
+font-family: "Sarabun";
+font-size: 10px;}
+header{    
+  	position: absolute;
+  	background-color:#4335F0;
+  	left: 0;
+    top: 0px;
+    width: 100%;
+    color: white;
+    padding: 10px;
+}
+
+#titulo{
+	font-family: "Cherry Swash";
+	float: left;
+	font-size: 30px;
+	padding-left: 1px;
+	letter-spacing: 5px;
+}
+.input{
+  font-family: "Sarabun" 
+  font-size: 50px;
+  color: black;
+}
+
+#clientes{
+  font-family: "Cherry Swash";
+  float: right;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 100px;
+  letter-spacing: 2px;
+ }
+
+#centrar{
+  text-align: center;
+}
+tr,th{
+  background-color: white;
+  font-family: "Sarabun";
+}
+.centrar
+  {
+    position: absolute;
+    /*nos posicionamos en el centro del navegador*/
+    top:50%;
+    left:50%;
+    /*determinamos una anchura*/
+    width:400px;
+   
+    /*indicamos que el margen izquierdo, es la mitad de la anchura*/
+    margin-left:-200px;
+    /*determinamos una altura*/
+    height:300px;
+    /*indicamos que el margen superior, es la mitad de la altura*/
+    margin-top:-150px;
+    border:1px solid #808080;
+    padding:5px;
+  }
+#saludos{
+    width:400px;
+}
+
+/* para 700px o menos */
+	@media screen and (max-width:700px) {
+		div,header{
+			float:none;
+			width:85%;
+            font-size:0.8em;
+		}
+        audio{
+            float:none;
+			width:40%;
+        }
+        #clientes {
+			display:none;
+		}
+		
+
+}
+
+

@@ -1,0 +1,272 @@
+
+header{    
+  	position: absolute;
+  	background-color:#4335F0; 
+  	left: 0;
+    top: 0px;
+    width: 100%;
+    color: white;
+    padding: 5px;
+}
+body {background-image: url("Imagenes/fondo.jpg");}
+
+aside{
+  background-color:white;
+  border-top: red 5px solid;
+  border-right: green 5px solid;
+  border-bottom: yellow 5px solid;
+  border-left: blue 5px solid;
+   width: 60%;
+}
+h1 { 
+  font-family: "Cherry Swash";
+   color: black;
+   }
+   h2 { 
+  font-family: "Sarabun";
+  color: black;
+   }
+   h3 { 
+  font-family: "Sarabun";
+  color: black;
+   }
+   h4 { 
+  font-family: "Sarabun";
+  color: black;
+   }
+
+#titulo{
+	font-family: "Cherry Swash";
+  color: white;
+	float: left;
+	font-size: 25px;
+	padding-left: 100px;
+	letter-spacing: 5px;
+  padding-top: 15px;
+}
+
+#clientes{
+  font-family: "Cherry Swash";
+  float: right;
+ font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  letter-spacing: 2px;
+
+ }
+
+
+#contPrincipal{
+  margin-top: 250px;
+  margin: auto;
+  width: 960px;
+}
+
+p {
+   font-family: "Sarabun";
+  margin-top: 10px;
+  text-align: justify;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+ 
+}
+
+#extra {
+  text-align: center;
+  float: right;
+  width: 300px;
+  background-color: #8DC16A;
+  border-radius:8px;
+}
+
+#contenido{
+  padding-top: 40px;
+  margin-top: 100px;
+	width: 640px;
+	background-color: #f1f1f1;	
+	border-radius:8px;
+}
+li{
+color: white;
+}
+
+.Icon{
+     margin-top: 20px;
+     margin-bottom:10px;
+     text-align: center;
+}
+
+#form-title {
+  font-family: Century Gothic;
+  font-size: 24px;
+  color: #333333;
+  line-height: 1;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+#hr1 {
+  border: 2px solid #8DC16A; 
+  border-radius: 250px/10px; 
+  height: 0px; 
+  text-align: center;
+}
+
+#form-text {
+  padding-top: 15px;
+  font-family: Century Gothic;
+  font-size: 18px;
+  color: #333333;
+  line-height: 1;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding-bottom: 15px;
+}
+
+
+#imgcont{
+  width:80%;
+}
+
+
+#ola{
+  width:30%;
+}
+
+
+#foot{
+  font-family: monospace;
+  text-align: right;
+  font-size: 15px;
+  padding-right: 20px;
+}
+
+img.imgCentro{
+  padding-left: 50px;
+  padding-bottom: 50px;
+  vertical-align: middle;
+}
+
+.input-form {
+  font-family: Century Gothic;
+	font-size: 16px;
+	line-height: 1;
+	color: black;
+	width: 80%;
+	height: 30px;
+	padding-left: 15px;
+	}
+
+.input-form:hover { 
+  border-color: #8DC16A;
+}
+
+
+.select-form{
+  font-family: Century Gothic;
+  font-size: 16px;
+  color: #7F7F7F;
+  width: 80%;
+  height: 30px;
+  background: white url("http://i62.tinypic.com/15xvbd5.png") no-repeat 97% center;
+  -webkit-appearance: button;
+  padding-left: 15px;
+}
+
+
+
+.boton {
+  font-family: Copperplate Gothic Light;
+  letter-spacing: 4px;
+  font-size: 20px;
+  background: #8DC16A;
+  line-height: .5;
+  color: white;
+  width: 60%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.boton:hover {
+  background: #333333;
+}
+
+
+a:hover {
+color:black;
+}
+
+a {
+	font-family: "Sarabun";
+	letter-spacing: 1px;
+  font-size: 25px;
+  color: white;
+}
+
+#columna {
+ float: right;
+ width: 250px;
+ padding-right: 20px;
+ background: red;
+}
+
+footer{
+  align-self: flex-end;
+
+  line-height: 7;
+  text-align: center;
+  width: 100%;
+  color: black;
+}
+/*para 1024*/
+  @media screen and (max-width:2048px) {
+
+
+    #contenido{
+      width: 68%;
+    } 
+        footer{
+      width:68%;
+    }
+    #extra{
+      width: 25%
+    }
+  }
+
+/*para 1024*/
+  @media screen and (max-width:1080px) {
+
+    #contPrincipal{
+      width:80%;
+    }
+
+    footer{
+      width:80%;
+    }
+    aside{
+      position: inherit;
+      float:none;
+      margin-top: 80px;
+    }
+
+  }  
+
+   @media screen and (max-width:480px) {
+    #contPrincipal{
+      width:100%;
+      text-align: center;
+    }
+
+    footer{
+      width:100%;
+    }
+
+      #extra{
+      display: inline-block;
+   
+    }
+  }   

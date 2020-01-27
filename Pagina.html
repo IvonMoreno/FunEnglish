@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="author" content="Arturo Sánchez Martínez."></meta>
+		<meta name="keywords" content="Crucigrama, Greetings"></meta>
+		<meta charset="UTF-8"> 
+		<link rel="stylesheet" type="text/css" href="estiloCrucigrama.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+		<script src="funcionamiento.js"></script>
+		<title>GREETINGS</title>
+		<audio id="mivideo" src="Audios/sonido.mp3" autoplay loop></audio>
+	</head>
+	<header>
+          <div id="titulo">
+             FunEnglish Kids
+            <br>
+            <br>
+      <li>
+  <lu><a href="usuarios_registrados.php">Home</a></lu>
+  <lu><a href="perfil.php">Profile</a></lu>
+  <lu><a href="Nosotros.php">About</a></lu>
+    </li>
+            </div>
+              <div id="clientes">
+              <center>
+                <img id="yo" src="Imagenes/lobito bandera.png" width="70px"><br>
+             <span>Un ingl&eacute;s divertido solo lo encuentras aqu&iacute; </span> 
+              </center>
+             </div>
+             <?php
+        session_start();
+      ?>
+        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+	<body onload="StartUp()" id="TheBody" >
+		<div class="Titles">
+			<h2 class="ExerciseTitle animated infinite pulse delay-2s">GREETINGS<br>SALUDOS</h2>
+			<h3 class="ExerciseSubtitle animated infinite pulse delay-2s">Crossword<br>Crucigrama</h3>
+		</div>
+		<div id="InstructionsDiv" class="StdDiv1">
+			<div id="Instructions">Complete the crossword, then click on "Check" to check your answer. If you are stuck, you can click on "Hint" to get a free letter. Click on a number in the grid to see the clue or clues for that number.<br>
+			Completa el crucigrama, luego has clic en "Check" para verificar tu respuesta. Si te encuentras en problemas, puedes hacer clic en "Hint" para obtener una pista. Has clic en un número en la cuadrícula para ver la pista o las pistas para ese número.<br><br>
+			Note: If the phrase has more than two words, do not leave space in the boxes<br>
+			Nota: Si la frase tiene más de dos palabras, no dejes espacio en los cuadros.
+		</div>
+			</div>
+			<div id="MainDiv" class="StdDiv2">
+				<div id="ClueEntry">
+				</div>
+				<table class="CrosswordGrid">
+					<tbody>
+						<tr id="Row_0">
+							<td class="BlankCell">&nbsp;</td>
+							<td class="BlankCell">&nbsp;</td>
+							<td class="BlankCell">&nbsp;</td>
+							<td class="BlankCell">&nbsp;</td>
+							<td class="NumLetterCell">
+								<a href="javascript:void(0);" class="GridNum" onclick="ShowClue(1,0,4)">1</a>
+								<span class="NumLetterCellText" id="L_0_4" onclick="ShowClue(1,0,4)">&nbsp;&nbsp;&nbsp;</span>
+							</td>
+							<td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td>
+							<td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td>
+							<td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td>
+							<td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td>
+						</tr>
+						<tr id="Row_1">
+							<td class="BlankCell">&nbsp;</td>
+							<td class="NumLetterCell">
+								<a href="javascript:void(0);" class="GridNum" onclick="ShowClue(2,1,1)">2</a>
+								<span class="NumLetterCellText" id="L_1_1" onclick="ShowClue(2,1,1)">&nbsp;&nbsp;&nbsp;</span>
+							</td>
+							<td class="LetterOnlyCell">
+								<span id="L_1_2">&nbsp;</span>
+							</td>
+							<td class="LetterOnlyCell">
+								<span id="L_1_3">&nbsp;</span>
+							</td>
+							<td class="LetterOnlyCell">
+								<span id="L_1_4">&nbsp;</span>
+							</td>
+							<td class="LetterOnlyCell">
+								<span id="L_1_5">&nbsp;</span>
+							</td><td class="BlankCell">&nbsp;</td>
+							<td class="BlankCell">&nbsp;</td>
+							<td class="BlankCell">&nbsp;</td>
+							<td class="BlankCell">&nbsp;</td>
+							<td class="BlankCell">&nbsp;</td>
+							<td class="BlankCell">&nbsp;</td>
+							<td class="BlankCell">&nbsp;</td>
+						</tr>
+							<tr id="Row_2">
+								<td class="BlankCell">&nbsp;</td>
+							<td class="BlankCell">&nbsp;</td>
+							<td class="BlankCell">
+								&nbsp;</td>
+								<td class="BlankCell">
+									&nbsp;</td>
+									<td class="LetterOnlyCell">
+										<span id="L_2_4">&nbsp;</span>
+									</td>
+									<td class="BlankCell">
+										&nbsp;</td>
+									<td class="BlankCell">
+										&nbsp;</td>
+									<td class="NumLetterCell">
+										<a href="javascript:void(0);" class="GridNum" onclick="ShowClue(3,2,7)">3</a>
+										<span class="NumLetterCellText" id="L_2_7" onclick="ShowClue(3,2,7)">
+										&nbsp;&nbsp;&nbsp;</span>
+									</td>
+									<td class="BlankCell">
+										&nbsp;</td>
+									<td class="BlankCell">
+										&nbsp;</td>
+									<td class="BlankCell">
+										&nbsp;</td>
+									<td class="BlankCell">
+										&nbsp;</td>
+									<td class="BlankCell">
+										&nbsp;</td>
+							</tr>
+							<tr id="Row_3">
+								<td class="NumLetterCell">
+								<a href="javascript:void(0);" class="GridNum" onclick="ShowClue(4,3,0)">4</a>
+								<span class="NumLetterCellText" id="L_3_0" onclick="ShowClue(4,3,0)">&nbsp;&nbsp;&nbsp;</span>
+							</td>
+							<td class="LetterOnlyCell">
+								<span id="L_3_1">&nbsp;</span>
+							</td>
+							<td class="LetterOnlyCell">
+								<span id="L_3_2">&nbsp;</span>
+						</td>
+							<td class="LetterOnlyCell">
+								<span id="L_3_3">&nbsp;</span>
+						</td>
+							<td class="LetterOnlyCell">
+								<span id="L_3_4">&nbsp;</span>
+						</td>
+							<td class="LetterOnlyCell">
+								<span id="L_3_5">&nbsp;</span>
+						</td>
+							<td class="LetterOnlyCell">
+								<span id="L_3_6">&nbsp;</span>
+						</td>
+							<td class="LetterOnlyCell">
+								<span id="L_3_7">&nbsp;</span>
+						</td>
+							<td class="LetterOnlyCell">
+								<span id="L_3_8">&nbsp;</span>
+						</td>
+							<td class="LetterOnlyCell">
+								<span id="L_3_9">&nbsp;</span>
+						</td>
+							<td class="LetterOnlyCell">
+								<span id="L_3_10">&nbsp;</span>
+						</td>
+							<td class="LetterOnlyCell">
+								<span id="L_3_11">&nbsp;</span>
+						</td>
+							<td class="LetterOnlyCell">
+								<span id="L_3_12">&nbsp;</span>
+							</td>
+						</tr>
+							<tr id="Row_4">
+								<td class="LetterOnlyCell">
+								<span id="L_4_0">&nbsp;</span>
+						</td>
+							<td class="BlankCell">&nbsp;</td>
+							<td class="BlankCell">&nbsp;</td>
+							<td class="BlankCell">&nbsp;</td>
+							<td class="LetterOnlyCell">
+								<span id="L_4_4">&nbsp;</span>
+						</td>
+							<td class="BlankCell">&nbsp;</td>
+							<td class="BlankCell">&nbsp;</td>
+							<td class="LetterOnlyCell"><span id="L_4_7">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_5"><td class="LetterOnlyCell"><span id="L_5_0">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_5_4">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_5_7">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_6"><td class="LetterOnlyCell"><span id="L_6_0">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(5,6,5)">5</a><span class="NumLetterCellText" id="L_6_5" onclick="ShowClue(5,6,5)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_6_6">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_6_7">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_6_8">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_6_9">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_6_10">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_6_11">&nbsp;</span></td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_7"><td class="LetterOnlyCell"><span id="L_7_0">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(6,7,2)">6</a><span class="NumLetterCellText" id="L_7_2" onclick="ShowClue(6,7,2)">&nbsp;&nbsp;&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(7,7,4)">7</a><span class="NumLetterCellText" id="L_7_4" onclick="ShowClue(7,7,4)">&nbsp;&nbsp;&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_7_7">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_8"><td class="LetterOnlyCell"><span id="L_8_0">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_8_2">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_8_4">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_8_7">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_9"><td class="LetterOnlyCell"><span id="L_9_0">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_9_2">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_9_4">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_10"><td class="LetterOnlyCell"><span id="L_10_0">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_10_2">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_10_4">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_11"><td class="LetterOnlyCell"><span id="L_11_0">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_11_2">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_11_4">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_12"><td class="LetterOnlyCell"><span id="L_12_0">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_12_2">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_12_4">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_13"><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(8,13,0)">8</a><span class="NumLetterCellText" id="L_13_0" onclick="ShowClue(8,13,0)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_13_1">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_13_2">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_13_3">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_13_4">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_13_5">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_13_6">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_13_7">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_13_8">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_13_9">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_13_10">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_14"><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_14_2">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_14_4">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr>
+
+</tbody>
+</table>
+
+<button id="CheckButton2" class="FuncButton animated infinite swing delay-2s" onmouseover="FuncBtnOver(this)" onfocus="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onblur="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckAnswers()">&nbsp;Check&nbsp;</button>
+
+<table id="Clues" style="display: none;">
+<tbody>
+<tr>
+<td>
+
+<table class="ClueList">
+<tbody id="CluesAcross">
+<tr><td colspan="2"><h3 class="ExerciseSubtitle" id="CluesAcrossLabel">Across:</h3></td></tr>
+
+<tr><td class="ClueNum">2. </td><td id="Clue_A_2" class="Clue">Hola</td></tr><tr><td class="ClueNum">4. </td><td id="Clue_A_4" class="Clue">Buenas tardes</td></tr><tr><td class="ClueNum">5. </td><td id="Clue_A_5" class="Clue">Adi&#x00F3;s</td></tr><tr><td class="ClueNum">8. </td><td id="Clue_A_8" class="Clue">Buenos dias</td></tr>
+
+</tbody>
+</table>
+
+</td>
+
+<td>
+
+<table class="ClueList">
+<tbody id="CluesDown">
+<tr><td colspan="2"><h3 class="ExerciseSubtitle" id="CluesDownLabel">Down:</h3></td></tr>
+
+<tr><td class="ClueNum">1. </td><td id="Clue_D_1" class="Clue">Por favor</td></tr><tr><td class="ClueNum">3. </td><td id="Clue_D_3" class="Clue">Bienvenido</td></tr><tr><td class="ClueNum">4. </td><td id="Clue_D_4" class="Clue">Buenas noches</td></tr><tr><td class="ClueNum">6. </td><td id="Clue_D_6" class="Clue">Gracias</td></tr><tr><td class="ClueNum">7. </td><td id="Clue_D_7" class="Clue">Perd&#x00F3;n</td></tr>
+
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+
+<div class="Feedback" id="FeedbackDiv">
+<div class="FeedbackText" id="FeedbackContent"></div>
+<button id="FeedbackOKButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="HideFeedback(); return false;">&nbsp;OK&nbsp;</button>
+</div>
+
+<!-- BeginBottomNavButtons -->
+
+
+<div class="NavButtonBar" id="BottomNavBar">
+
+</body>
+  <footer style="background-color:#8DC16A; width: 100% ">
+        &copy; 2019 Derechos reservados | FunEnglisk Kids Corporation
+      </footer>
+</html>
